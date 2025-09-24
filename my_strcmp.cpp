@@ -11,8 +11,6 @@ int mystrcmp(const char* str1, const char* str2) {
             ;
         }
         else {
-            /*if (str1[i] == 'h' || str2[i] == 'h')
-                printf("%c != %c\n", str1[i], str2[i]);*/
             difference = tolower(str1[i]) - tolower(str2[i]); 
             break;
         }

@@ -15,20 +15,8 @@ int main() {
     FILE* text = fopen ("onegin.txt", "rb"); // TODO: если файл не открылся? //Why is there a problem with "r"
     // TODO: относительные пути .
     buffer = ReadBuffer(text, &size);
-    pointer_array = Initpointerarr(buffer, &nLines); //creat_pointer_arr
-    /*for (int k = 0; k < 10; k++) {
-        printf ("pointer_array[%d]: %p\n", k, pointer_array[k]);
-    }*/
-    //printf("the amount of strings:%d\n", nLines);
-    /*for (int j = 0; j < 10; j++) {
-        printf ("%s\n", pointer_array[j]);
-    }*/
-    //qsort (pointer_array, nLines, sizeof(pointer_array[0]), Comparator1);
-    //printf("sizeof: %d \n", sizeof(char*) );
+    pointer_array = Initpointerarr(buffer, &nLines);
     bubbles1 (pointer_array, nLines);
-    /*for (int k = 0; k < 10; k++) {
-        printf ("pointer_array[%d]: %p\n", k, pointer_array[k]);
-    }*/
     for (unsigned int j = 0; j < nLines; j++) {
         printf ("%s\n", pointer_array[j]);
     }
